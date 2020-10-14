@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.2 on win32)" generated="20201014 16:56:52.616" rpa="false">
+<suite id="s1" name="TC1" source="C:\Users\Azuga\PycharmProjects\pythonProject\TestCases\TC1.robot">
+<kw name="LoginApplication" library="Keywords" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20201014 16:56:53.019" level="INFO">Opening browser 'chrome' to base url 'https://integration-apps.azuga.com'.</msg>
+<status status="PASS" starttime="20201014 16:56:53.019" endtime="20201014 16:57:03.304"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20201014 16:57:03.304" endtime="20201014 16:57:05.473"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${username}</arg>
+<arg>abhinayak@azuga.com</arg>
+</arguments>
+<msg timestamp="20201014 16:57:05.474" level="INFO">Typing text 'abhinayak@azuga.com' into text field 'id:inputEmail'.</msg>
+<status status="PASS" starttime="20201014 16:57:05.473" endtime="20201014 16:57:05.664"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${password}</arg>
+<arg>123456</arg>
+</arguments>
+<msg timestamp="20201014 16:57:05.666" level="INFO">Typing text '123456' into text field 'id:inputPassword'.</msg>
+<status status="PASS" starttime="20201014 16:57:05.665" endtime="20201014 16:57:05.774"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${loginbutton}</arg>
+</arguments>
+<msg timestamp="20201014 16:57:05.775" level="INFO">Clicking element 'xpath://*[@id="loginBtn"]'.</msg>
+<status status="PASS" starttime="20201014 16:57:05.774" endtime="20201014 16:57:19.558"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>7</arg>
+</arguments>
+<msg timestamp="20201014 16:57:26.559" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" starttime="20201014 16:57:19.558" endtime="20201014 16:57:26.559"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${switchcust}</arg>
+</arguments>
+<msg timestamp="20201014 16:57:26.560" level="INFO">Clicking element 'xpath://*[@id="switchCustAnchor"]'.</msg>
+<status status="PASS" starttime="20201014 16:57:26.560" endtime="20201014 16:57:26.720"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${switchentry}</arg>
+<arg>${switch}</arg>
+</arguments>
+<msg timestamp="20201014 16:57:26.721" level="INFO">Typing text '5131' into text field 'xpath://*[@id="customerID"]'.</msg>
+<status status="PASS" starttime="20201014 16:57:26.720" endtime="20201014 16:57:26.978"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${switchbutton}</arg>
+</arguments>
+<msg timestamp="20201014 16:57:26.979" level="INFO">Clicking element 'xpath://*[@id="switchCust"]'.</msg>
+<status status="PASS" starttime="20201014 16:57:26.978" endtime="20201014 16:57:27.071"></status>
+</kw>
+<status status="PASS" starttime="20201014 16:56:53.018" endtime="20201014 16:57:27.072"></status>
+</kw>
+<test id="s1-t1" name="TC1">
+<kw name="Devicecreation" library="Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${admintab}</arg>
+</arguments>
+<msg timestamp="20201014 16:57:27.073" level="INFO">Clicking element 'xpath://*[@id="admin"]/a'.</msg>
+<status status="PASS" starttime="20201014 16:57:27.073" endtime="20201014 16:57:34.735"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20201014 16:57:38.737" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20201014 16:57:34.736" endtime="20201014 16:57:38.737"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${devicetab}</arg>
+</arguments>
+<msg timestamp="20201014 16:57:38.738" level="INFO">Clicking element 'xpath://*[@id="DevicesTab"]'.</msg>
+<status status="PASS" starttime="20201014 16:57:38.737" endtime="20201014 16:57:39.068"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20201014 16:57:42.070" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20201014 16:57:39.068" endtime="20201014 16:57:42.070"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${adddevice}</arg>
+</arguments>
+<msg timestamp="20201014 16:57:42.071" level="INFO">Clicking element 'xpath://*[@id="devicesContent"]/div[1]/div[1]/div[1]/div/span'.</msg>
+<status status="PASS" starttime="20201014 16:57:42.070" endtime="20201014 16:57:42.310"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>10</arg>
+<arg>0123456789</arg>
+</arguments>
+<assign>
+<var>${number}</var>
+</assign>
+<msg timestamp="20201014 16:57:42.310" level="INFO">${number} = 6709791026</msg>
+<status status="PASS" starttime="20201014 16:57:42.310" endtime="20201014 16:57:42.311"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${number}</arg>
+</arguments>
+<msg timestamp="20201014 16:57:42.311" level="INFO">${number} = 6709791026</msg>
+<status status="PASS" starttime="20201014 16:57:42.311" endtime="20201014 16:57:42.311"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Dserialnumber}</arg>
+<arg>${number}</arg>
+</arguments>
+<msg timestamp="20201014 16:57:42.312" level="INFO">Typing text '6709791026' into text field 'id:serialNumber'.</msg>
+<status status="PASS" starttime="20201014 16:57:42.312" endtime="20201014 16:57:42.676"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20201014 16:57:45.676" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20201014 16:57:42.676" endtime="20201014 16:57:45.676"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Dchosen}</arg>
+</arguments>
+<msg timestamp="20201014 16:57:45.677" level="INFO">Clicking element 'xpath://*[@id="allDeviceType_chosen"]'.</msg>
+<status status="PASS" starttime="20201014 16:57:45.677" endtime="20201014 16:57:45.840"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Dtype}</arg>
+<arg>Datalogger</arg>
+</arguments>
+<msg timestamp="20201014 16:57:45.841" level="INFO">Typing text 'Datalogger' into text field 'xpath://*[@id="allDeviceType_chosen"]/div/div/input'.</msg>
+<status status="PASS" starttime="20201014 16:57:45.841" endtime="20201014 16:57:46.061"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${Dtype}</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20201014 16:57:46.064" level="INFO">Sending key(s) ('ENTER',) to xpath://*[@id="allDeviceType_chosen"]/div/div/input element.</msg>
+<msg timestamp="20201014 16:57:46.094" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" starttime="20201014 16:57:46.061" endtime="20201014 16:57:46.439"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>15</arg>
+<arg>0123456789</arg>
+</arguments>
+<assign>
+<var>${IMEI}</var>
+</assign>
+<msg timestamp="20201014 16:57:46.439" level="INFO">${IMEI} = 081523167445319</msg>
+<status status="PASS" starttime="20201014 16:57:46.439" endtime="20201014 16:57:46.439"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${IMEI}</arg>
+</arguments>
+<msg timestamp="20201014 16:57:46.440" level="INFO">${IMEI} = 081523167445319</msg>
+<status status="PASS" starttime="20201014 16:57:46.439" endtime="20201014 16:57:46.440"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${DIMEI}</arg>
+<arg>${IMEI}</arg>
+</arguments>
+<msg timestamp="20201014 16:57:46.440" level="INFO">Typing text '081523167445319' into text field 'xpath://*[@id="imeiNumber"]'.</msg>
+<status status="PASS" starttime="20201014 16:57:46.440" endtime="20201014 16:57:46.641"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>14</arg>
+<arg>0123456789</arg>
+</arguments>
+<assign>
+<var>${wire}</var>
+</assign>
+<msg timestamp="20201014 16:57:46.641" level="INFO">${wire} = 51426342738574</msg>
+<status status="PASS" starttime="20201014 16:57:46.641" endtime="20201014 16:57:46.641"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${wire}</arg>
+</arguments>
+<msg timestamp="20201014 16:57:46.642" level="INFO">${wire} = 51426342738574</msg>
+<status status="PASS" starttime="20201014 16:57:46.641" endtime="20201014 16:57:46.642"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Dsimid}</arg>
+<arg>${wire}</arg>
+</arguments>
+<msg timestamp="20201014 16:57:46.642" level="INFO">Typing text '51426342738574' into text field 'xpath://*[@id="simId"]'.</msg>
+<status status="PASS" starttime="20201014 16:57:46.642" endtime="20201014 16:57:46.803"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Dcarrier}</arg>
+</arguments>
+<msg timestamp="20201014 16:57:46.803" level="INFO">Clicking element 'xpath://*[@id="carrier_chosen"]/a/span'.</msg>
+<status status="PASS" starttime="20201014 16:57:46.803" endtime="20201014 16:57:46.902"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Dcarrierchoosen}</arg>
+<arg>AT&amp;T</arg>
+</arguments>
+<msg timestamp="20201014 16:57:46.902" level="INFO">Typing text 'AT&amp;T' into text field 'xpath://*[@id="carrier_chosen"]/div/div/input'.</msg>
+<status status="PASS" starttime="20201014 16:57:46.902" endtime="20201014 16:57:47.072"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${Dcarrierchoosen}</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20201014 16:57:47.073" level="INFO">Sending key(s) ('ENTER',) to xpath://*[@id="carrier_chosen"]/div/div/input element.</msg>
+<msg timestamp="20201014 16:57:47.101" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" starttime="20201014 16:57:47.072" endtime="20201014 16:57:47.415"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Dproduct}</arg>
+</arguments>
+<msg timestamp="20201014 16:57:47.416" level="INFO">Clicking element 'xpath://*[@id="productCode_chosen"]/a/span'.</msg>
+<status status="PASS" starttime="20201014 16:57:47.415" endtime="20201014 16:57:47.531"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Dproductchosen}</arg>
+<arg>DL750-30Z3</arg>
+</arguments>
+<msg timestamp="20201014 16:57:47.531" level="INFO">Typing text 'DL750-30Z3' into text field 'xpath://*[@id="productCode_chosen"]/div/div/input'.</msg>
+<status status="PASS" starttime="20201014 16:57:47.531" endtime="20201014 16:57:47.696"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${Dproductchosen}</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20201014 16:57:47.696" level="INFO">Sending key(s) ('ENTER',) to xpath://*[@id="productCode_chosen"]/div/div/input element.</msg>
+<msg timestamp="20201014 16:57:47.739" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" starttime="20201014 16:57:47.696" endtime="20201014 16:57:48.029"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${savedevice}</arg>
+</arguments>
+<msg timestamp="20201014 16:57:48.030" level="INFO">Clicking element 'xpath://*[@id="save-device"]'.</msg>
+<status status="PASS" starttime="20201014 16:57:48.029" endtime="20201014 16:57:48.212"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>6</arg>
+</arguments>
+<msg timestamp="20201014 16:57:54.213" level="INFO">Slept 6 seconds</msg>
+<status status="PASS" starttime="20201014 16:57:48.213" endtime="20201014 16:57:54.213"></status>
+</kw>
+<status status="PASS" starttime="20201014 16:57:27.073" endtime="20201014 16:57:54.213"></status>
+</kw>
+<status status="PASS" starttime="20201014 16:57:27.072" endtime="20201014 16:57:54.213" critical="yes"></status>
+</test>
+<test id="s1-t2" name="TC2">
+<kw name="DeviceCreateDBvalidation" library="Keywords">
+<kw name="Connect To Database" library="DatabaseLibrary">
+<doc>Loads the DB API 2.0 module given `dbapiModuleName` then uses it to
+connect to the database using `dbName`, `dbUsername`, and `dbPassword`.</doc>
+<arguments>
+<arg>pymysql</arg>
+<arg>${DBname}</arg>
+<arg>${Dbuser}</arg>
+<arg>${DBpass}</arg>
+<arg>${DBhost}</arg>
+<arg>${DBport}</arg>
+</arguments>
+<msg timestamp="20201014 16:57:54.258" level="INFO">Connecting using : pymysql.connect(db=azuga, user=azugaro, passwd=azugaro, host=stagingdb.azuga.com, port=3306, charset=None) </msg>
+<status status="PASS" starttime="20201014 16:57:54.219" endtime="20201014 16:57:55.294"></status>
+</kw>
+<kw name="Check If Exists In Database" library="DatabaseLibrary">
+<doc>Check if any row would be returned by given the input `selectStatement`. If there are no results, then this will
+throw an AssertionError. Set optional input `sansTran` to True to run command without an explicit transaction
+commit or rollback.</doc>
+<arguments>
+<arg>select * from azuga.device where serialNum=${number};</arg>
+</arguments>
+<msg timestamp="20201014 16:57:55.295" level="INFO">Executing : Check If Exists In Database  |  select * from azuga.device where serialNum=6709791026; </msg>
+<msg timestamp="20201014 16:57:55.295" level="INFO">Executing : Query  |  select * from azuga.device where serialNum=6709791026; </msg>
+<status status="PASS" starttime="20201014 16:57:55.294" endtime="20201014 16:57:56.545"></status>
+</kw>
+<kw name="Disconnect From Database" library="DatabaseLibrary">
+<doc>Disconnects from the database.</doc>
+<msg timestamp="20201014 16:57:56.546" level="INFO">Executing : Disconnect From Database</msg>
+<status status="PASS" starttime="20201014 16:57:56.545" endtime="20201014 16:57:56.547"></status>
+</kw>
+<status status="PASS" starttime="20201014 16:57:54.218" endtime="20201014 16:57:56.547"></status>
+</kw>
+<status status="PASS" starttime="20201014 16:57:54.217" endtime="20201014 16:57:56.548" critical="yes"></status>
+</test>
+<test id="s1-t3" name="TC3">
+<kw name="SafetycamCreation" library="Keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${admintab}</arg>
+</arguments>
+<msg timestamp="20201014 16:57:56.559" level="INFO">Clicking element 'xpath://*[@id="admin"]/a'.</msg>
+<status status="PASS" starttime="20201014 16:57:56.558" endtime="20201014 16:58:02.973"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20201014 16:58:04.975" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201014 16:58:02.973" endtime="20201014 16:58:04.975"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${devicetab}</arg>
+</arguments>
+<msg timestamp="20201014 16:58:04.975" level="INFO">Clicking element 'xpath://*[@id="DevicesTab"]'.</msg>
+<status status="PASS" starttime="20201014 16:58:04.975" endtime="20201014 16:58:05.421"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20201014 16:58:07.423" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20201014 16:58:05.421" endtime="20201014 16:58:07.423"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Safetycamtab}</arg>
+</arguments>
+<msg timestamp="20201014 16:58:07.424" level="INFO">Clicking element 'xpath://*[@id="option-dashcams"]'.</msg>
+<status status="PASS" starttime="20201014 16:58:07.423" endtime="20201014 16:58:07.765"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20201014 16:58:10.766" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20201014 16:58:07.766" endtime="20201014 16:58:10.766"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${AddSafetycam}</arg>
+</arguments>
+<msg timestamp="20201014 16:58:10.766" level="INFO">Clicking element '//*[@id="SafetyCams"]/div[1]/div[1]/div[1]/div/span'.</msg>
+<status status="PASS" starttime="20201014 16:58:10.766" endtime="20201014 16:58:11.022"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20201014 16:58:14.022" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20201014 16:58:11.022" endtime="20201014 16:58:14.022"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${SVendor}</arg>
+</arguments>
+<msg timestamp="20201014 16:58:14.025" level="INFO">Clicking element '//*[@id="dashcamVendorType_chosen"]'.</msg>
+<status status="PASS" starttime="20201014 16:58:14.024" endtime="20201014 16:58:14.149"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SVchoosen}</arg>
+<arg>Azuga SafetyCam</arg>
+</arguments>
+<msg timestamp="20201014 16:58:14.149" level="INFO">Typing text 'Azuga SafetyCam' into text field 'xpath://*[@id="dashcamVendorType_chosen"]/div/div/input'.</msg>
+<status status="PASS" starttime="20201014 16:58:14.149" endtime="20201014 16:58:14.365"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${SVchoosen}</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20201014 16:58:14.366" level="INFO">Sending key(s) ('ENTER',) to xpath://*[@id="dashcamVendorType_chosen"]/div/div/input element.</msg>
+<msg timestamp="20201014 16:58:14.409" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" starttime="20201014 16:58:14.365" endtime="20201014 16:58:14.784"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Sproduct}</arg>
+</arguments>
+<msg timestamp="20201014 16:58:14.785" level="INFO">Clicking element 'xpath://*[@id="dashcamProductCode_chosen"]'.</msg>
+<status status="PASS" starttime="20201014 16:58:14.784" endtime="20201014 16:58:14.899"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${Sproductchosen}</arg>
+<arg>AZ-D007</arg>
+</arguments>
+<msg timestamp="20201014 16:58:14.900" level="INFO">Typing text 'AZ-D007' into text field 'xpath://*[@id="dashcamProductCode_chosen"]/div/div/input'.</msg>
+<status status="PASS" starttime="20201014 16:58:14.900" endtime="20201014 16:58:15.035"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>${Sproductchosen}</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20201014 16:58:15.036" level="INFO">Sending key(s) ('ENTER',) to xpath://*[@id="dashcamProductCode_chosen"]/div/div/input element.</msg>
+<msg timestamp="20201014 16:58:15.089" level="INFO">Pressing special key ENTER to element.</msg>
+<status status="PASS" starttime="20201014 16:58:15.035" endtime="20201014 16:58:15.404"></status>
+</kw>
+<kw name="Generate Random String" library="String">
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<arguments>
+<arg>8</arg>
+<arg>0123456789</arg>
+</arguments>
+<assign>
+<var>${Snumber}</var>
+</assign>
+<msg timestamp="20201014 16:58:15.405" level="INFO">${Snumber} = 03511237</msg>
+<status status="PASS" starttime="20201014 16:58:15.405" endtime="20201014 16:58:15.405"></status>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>${Snumber}</arg>
+</arguments>
+<msg timestamp="20201014 16:58:15.406" level="INFO">${Snumber} = 03511237</msg>
+<status status="PASS" starttime="20201014 16:58:15.405" endtime="20201014 16:58:15.406"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${SSerialnumber}</arg>
+<arg>${Snumber}</arg>
+</arguments>
+<msg timestamp="20201014 16:58:15.406" level="INFO">Typing text '03511237' into text field 'xpath://*[@id="dashcamSerialNumber"]'.</msg>
+<status status="PASS" starttime="20201014 16:58:15.406" endtime="20201014 16:58:15.569"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${Ssave}</arg>
+</arguments>
+<msg timestamp="20201014 16:58:15.570" level="INFO">Clicking element 'xpath://*[@id="save-dashcams"]'.</msg>
+<status status="PASS" starttime="20201014 16:58:15.569" endtime="20201014 16:58:15.742"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>7</arg>
+</arguments>
+<msg timestamp="20201014 16:58:22.744" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" starttime="20201014 16:58:15.742" endtime="20201014 16:58:22.744"></status>
+</kw>
+<status status="PASS" starttime="20201014 16:57:56.557" endtime="20201014 16:58:22.744"></status>
+</kw>
+<status status="PASS" starttime="20201014 16:57:56.552" endtime="20201014 16:58:22.745" critical="yes"></status>
+</test>
+<test id="s1-t4" name="TC4">
+<kw name="SafetyCreateDBvalidation" library="Keywords">
+<kw name="Connect To Database" library="DatabaseLibrary">
+<doc>Loads the DB API 2.0 module given `dbapiModuleName` then uses it to
+connect to the database using `dbName`, `dbUsername`, and `dbPassword`.</doc>
+<arguments>
+<arg>pymysql</arg>
+<arg>${DBname}</arg>
+<arg>${Dbuser}</arg>
+<arg>${DBpass}</arg>
+<arg>${DBhost}</arg>
+<arg>${DBport}</arg>
+</arguments>
+<msg timestamp="20201014 16:58:22.751" level="INFO">Connecting using : pymysql.connect(db=azuga, user=azugaro, passwd=azugaro, host=stagingdb.azuga.com, port=3306, charset=None) </msg>
+<status status="PASS" starttime="20201014 16:58:22.750" endtime="20201014 16:58:23.770"></status>
+</kw>
+<kw name="Check If Exists In Database" library="DatabaseLibrary">
+<doc>Check if any row would be returned by given the input `selectStatement`. If there are no results, then this will
+throw an AssertionError. Set optional input `sansTran` to True to run command without an explicit transaction
+commit or rollback.</doc>
+<arguments>
+<arg>select * from azuga.device where serialNum=${Snumber};</arg>
+</arguments>
+<msg timestamp="20201014 16:58:23.771" level="INFO">Executing : Check If Exists In Database  |  select * from azuga.device where serialNum=03511237; </msg>
+<msg timestamp="20201014 16:58:23.772" level="INFO">Executing : Query  |  select * from azuga.device where serialNum=03511237; </msg>
+<status status="PASS" starttime="20201014 16:58:23.771" endtime="20201014 16:58:24.906"></status>
+</kw>
+<kw name="Disconnect From Database" library="DatabaseLibrary">
+<doc>Disconnects from the database.</doc>
+<msg timestamp="20201014 16:58:24.907" level="INFO">Executing : Disconnect From Database</msg>
+<status status="PASS" starttime="20201014 16:58:24.906" endtime="20201014 16:58:24.907"></status>
+</kw>
+<status status="PASS" starttime="20201014 16:58:22.750" endtime="20201014 16:58:24.907"></status>
+</kw>
+<status status="PASS" starttime="20201014 16:58:22.749" endtime="20201014 16:58:24.908" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201014 16:56:52.619" endtime="20201014 16:58:24.911"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0">Critical Tests</stat>
+<stat pass="4" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" id="s1" name="TC1">TC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
